@@ -1,0 +1,133 @@
+*{
+	margin:0;
+	padding:0;
+    --icon-size : 100px;
+    --icon-grow : 20px;
+	}
+button, .btn {
+    cursor: pointer;
+}
+body {
+    /* align-items: center; */
+    margin: 0;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(to right, rgb(165, 183, 194), #444);
+
+}
+
+
+body p {
+    color: #33f;
+    text-shadow: 2px 2px #444;
+    margin-left: 25px;
+    padding: 5px;
+    text-shadow: 1px 1px #333;
+}
+
+body h1, h2, h3 {
+    padding-top: 50px;
+    /* font-size: 2em;
+    padding: 50px; */
+    
+}
+#artigo {
+    /* left: 30px; */
+    text-align: center;
+    /* display: flex; */
+    align-content: center;
+    /* animation: estado normal 1s; */
+
+}
+
+footer {
+    background: #444;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    height: 60px;
+    border-top: solid 5px #4faddb;
+}
+
+
+footer img {
+    float: right;
+    margin: 15px 5px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.formulario { 
+
+    background-image: linear-gradient(45deg, #3c820c, #2c52fc);
+    text-align: left;
+    width: max-content;
+    border: 5px solid #fff;
+    border-radius: 10PX;
+    padding: 20px;
+    box-shadow: 5px 5px #999;
+}
+
+
+
+article .programacao img,
+article .contatoPage img {
+    margin: 20px 10px;
+    box-shadow: 1px 1px #333;  
+    transition: 500ms;
+    cursor: pointer;
+}
+
+article .programacao  img:not(.noRounded),
+article .contatoPage img:not(.noRounded) {
+    /* cursor: pointer; */
+    width: var(--icon-size);
+    height: var(--icon-size);
+    border-radius: 50%;  
+    
+}
+
+article .noRounded {
+    width: calc(var(--icon-size) - 20px);
+    height: calc(var(--icon-size) - 20px);
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+article .containerFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+article .programacao img:hover,
+article .contatoPage img:hover {
+    /* filter: blur(6px); */
+    filter: drop-shadow(16px 16px 20px #333);
+    width: calc(var(--icon-size) + var(--icon-grow));
+    height: calc(var(--icon-size) + var(--icon-grow));
+    margin: 10px 0px;
+    padding: 0;
+    transition: 120ms;
+}
+
+.sobre img, .contato img {
+    float: left;
+}
+
+.sobre {
+    /* color: cornflowerblue; */
+    font-size: 2em;
+    margin: 100px;
+    text-align: left ;
+}
+
+.sobre h1, h2 {
+    font-size: 3em;
+}
