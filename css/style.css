@@ -1,20 +1,31 @@
-*{
-	margin:0;
-	padding:0;
-    --icon-size : 100px;
-    --icon-grow : 20px;
-	}
-button, .btn {
+* {
+    margin: 0;
+    padding: 0;
+    --icon-size: 100px;
+    --icon-grow: 20px;
+}
+
+
+
+article .main {
+    margin-top: 200px;
+    /* position: relative; */
+    flex-direction: column; 
+    bottom: 0px;
+
+}
+
+button,
+.btn {
     cursor: pointer;
 }
+
 body {
-    /* align-items: center; */
     margin: 0;
     margin-top: 80px;
     margin-bottom: 80px;
     font-family: 'Oswald', sans-serif;
-    background: linear-gradient(to right, rgb(165, 183, 194), #444);
-
+    background: linear-gradient(to right, #fff, #444);
 }
 
 
@@ -26,18 +37,10 @@ body p {
     text-shadow: 1px 1px #333;
 }
 
-body h1, h2, h3 {
-    padding-top: 50px;
-    /* font-size: 2em;
-    padding: 50px; */
-    
-}
+
 #artigo {
-    /* left: 30px; */
     text-align: center;
-    /* display: flex; */
-    align-content: center;
-    /* animation: estado normal 1s; */
+    justify-content: center;
 
 }
 
@@ -46,7 +49,6 @@ footer {
     color: #fff;
     width: 100%;
     position: fixed;
-    left: 0;
     bottom: 0;
     text-align: center;
     height: 60px;
@@ -54,41 +56,26 @@ footer {
 }
 
 
-footer img {
-    float: right;
-    margin: 15px 5px;
-    width: 30px;
-    border-radius: 50%;
-}
-
-.formulario { 
-
-    background-image: linear-gradient(45deg, #3c820c, #2c52fc);
-    text-align: left;
-    width: max-content;
-    border: 5px solid #fff;
-    border-radius: 10PX;
-    padding: 20px;
-    box-shadow: 5px 5px #999;
-}
 
 
 
 article .programacao img,
 article .contatoPage img {
     margin: 20px 10px;
-    box-shadow: 1px 1px #333;  
+    box-shadow: 1px 1px #333;
     transition: 500ms;
     cursor: pointer;
+    background-color: white;
+
 }
 
-article .programacao  img:not(.noRounded),
+article .programacao img:not(.noRounded),
 article .contatoPage img:not(.noRounded) {
     /* cursor: pointer; */
     width: var(--icon-size);
     height: var(--icon-size);
-    border-radius: 50%;  
-    
+    border-radius: 50%;
+
 }
 
 article .noRounded {
@@ -99,16 +86,15 @@ article .noRounded {
     border-radius: 50%;
 }
 
-article .containerFlex{
+article .containerFlex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
 
 article .programacao img:hover,
 article .contatoPage img:hover {
-    /* filter: blur(6px); */
     filter: drop-shadow(16px 16px 20px #333);
     width: calc(var(--icon-size) + var(--icon-grow));
     height: calc(var(--icon-size) + var(--icon-grow));
@@ -117,17 +103,119 @@ article .contatoPage img:hover {
     transition: 120ms;
 }
 
-.sobre img, .contato img {
-    float: left;
+.formulario {
+    color: red;
+    text-align: left;
+    width: max-content;
+    background-image: url("../img/backgroundTexture.jpg");
+    background-repeat: none;
+    position: fixed;
+    right: -400px;
+    bottom: 70px;
+    padding: 10px;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    opacity: .7;
+    /* transition: 250ms; */
+    box-shadow: -5px -10px #333;
+    justify-content: center; 
+    display: flex;
+    
 }
+
+
+
+.formulario textarea {
+    resize: none;
+}
+
+.formulario .btn {
+    left: 0;
+    margin: 5px;
+    padding: 10px;
+}
+
+.formulario .x {
+    float:right;
+    position:relative;
+    margin:0;
+    padding:0;
+    text-shadow: #333 1px 1px;
+  }
+  
+
+h1 {
+    font-size: 60px;
+}
+
 
 .sobre {
-    /* color: cornflowerblue; */
     font-size: 2em;
     margin: 100px;
-    text-align: left ;
+    text-align: justify;
+    align-items: center;
 }
 
-.sobre h1, h2 {
-    font-size: 3em;
+
+ .sobre #gabrielBackImg{
+    margin: 5px;
+    float: left;
+    width: 400px;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+.sobreProgramacao img{
+    border-radius: 20px;
+    width: 100%;
+    bottom: 0px;
+    margin: 20px;
+}
+
+.impressao3d img {
+    border-radius: 20px;
+    width: 100%;
+    bottom: 0px;
+    
+}
+article>.sobre>div {
+    margin: solid 2px #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container img {
+    border-radius: 20px;
+    width: 400px;
+}
+
+@media (max-width: 691px){
+    #gabrielBackImg{
+        width: 250px !important;
+        transition: 500ms;
+    }
+}
+
+@media (max-width: 800px) {
+    article>#gabrielBackImg{
+        float: left !important;
+        transition: 400ms;
+    }
+    
+}
+
+.inicio{
+    text-decoration: none;
+    border: solid 2px #fff;
+    width: max-content;
+    border-radius: 20px;
+    padding: 5px;
+    color: red;
+
 }
