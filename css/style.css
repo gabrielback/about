@@ -9,7 +9,6 @@
 
 article .main {
     margin-top: 200px;
-    /* position: relative; */
     flex-direction: column; 
     bottom: 0px;
 
@@ -21,7 +20,7 @@ button,
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 80px;
     font-family: 'Oswald', sans-serif;
@@ -30,7 +29,7 @@ body {
 
 
 body p {
-    color: #33f;
+    color: #731;
     text-shadow: 2px 2px #444;
     margin-left: 25px;
     padding: 5px;
@@ -118,7 +117,6 @@ article .contatoPage img:hover {
     border-radius: 10px;
     background-color: #fff;
     opacity: .7;
-    /* transition: 250ms; */
     box-shadow: -5px -10px #333;
     justify-content: center; 
     display: flex;
@@ -211,11 +209,24 @@ article>.sobre>div {
 }
 
 .inicio{
+    display: none;
     text-decoration: none;
     border: solid 2px #fff;
     width: max-content;
     border-radius: 20px;
     padding: 5px;
-    color: red;
+    /* color: */
+    background-color: #333;
 
+}
+
+.titulo {
+    font-size: 150px;
+    transition: 1s;
+}
+
+.titulo:hover {
+    font-size: 160px;
+    margin-bottom: -11px;
+    text-shadow: 4px 4px #444;
 }

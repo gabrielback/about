@@ -14,7 +14,6 @@ $('.x').click(function(){
 })
 
 
-
 function openPage(tagName, pageHTML) {
     pageHTML = `./pages/${pageHTML}`
     var xml = new XMLHttpRequest()
