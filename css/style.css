@@ -27,9 +27,12 @@ body {
     background: linear-gradient(to right, #fff, #444);
 }
 
+p, h2{
+    font-size: 2em;
+}
 
 body p {
-    color: #731;
+    color: #222;
     text-shadow: 2px 2px #444;
     margin-left: 25px;
     padding: 5px;
@@ -70,7 +73,6 @@ article .contatoPage img {
 
 article .programacao img:not(.noRounded),
 article .contatoPage img:not(.noRounded) {
-    /* cursor: pointer; */
     width: var(--icon-size);
     height: var(--icon-size);
     border-radius: 50%;
@@ -150,7 +152,6 @@ h1 {
 
 
 .sobre {
-    font-size: 2em;
     margin: 100px;
     text-align: justify;
     align-items: center;
@@ -221,12 +222,12 @@ article>.sobre>div {
 }
 
 .titulo {
-    font-size: 150px;
+    font-size: 8em;
     transition: 1s;
 }
 
 .titulo:hover {
-    font-size: 160px;
+    font-size: 9em;
     margin-bottom: -11px;
     text-shadow: 4px 4px #444;
 }
