@@ -8,7 +8,7 @@
 
 
 article .main {
-    margin-top: 200px;
+    margin-top: 100px;
     flex-direction: column; 
     bottom: 0px;
 
@@ -24,27 +24,15 @@ body {
     margin-top: 80px;
     margin-bottom: 80px;
     font-family: 'Oswald', sans-serif;
-    background: linear-gradient(to right, #fff, #444);
-}
+    background-image: linear-gradient(to right, #999, #222);}
 
-p, h2{
-    font-size: 2em;
-}
 
 body p {
-    color: #222;
-    text-shadow: 2px 2px #444;
+    color: #000;
     margin-left: 25px;
     padding: 5px;
-    text-shadow: 1px 1px #333;
 }
 
-
-#artigo {
-    text-align: center;
-    justify-content: center;
-
-}
 
 footer {
     background: #444;
@@ -61,8 +49,7 @@ footer {
 
 
 
-article .programacao img,
-article .contatoPage img {
+.patternDesign img {
     margin: 20px 10px;
     box-shadow: 1px 1px #333;
     transition: 500ms;
@@ -71,15 +58,14 @@ article .contatoPage img {
 
 }
 
-article .programacao img:not(.noRounded),
-article .contatoPage img:not(.noRounded) {
+.patternDesign img:not(.noRounded){
     width: var(--icon-size);
     height: var(--icon-size);
     border-radius: 50%;
 
 }
 
-article .noRounded {
+.noRounded {
     width: calc(var(--icon-size) - 20px);
     height: calc(var(--icon-size) - 20px);
     padding: 10px;
@@ -87,15 +73,14 @@ article .noRounded {
     border-radius: 50%;
 }
 
-article .containerFlex {
+.containerFlex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
 }
 
-article .programacao img:hover,
-article .contatoPage img:hover {
+.patternDesign img:hover {
     filter: drop-shadow(16px 16px 20px #333);
     width: calc(var(--icon-size) + var(--icon-grow));
     height: calc(var(--icon-size) + var(--icon-grow));
@@ -144,44 +129,6 @@ article .contatoPage img:hover {
     padding:0;
     text-shadow: #333 1px 1px;
   }
-  
-
-h1 {
-    font-size: 60px;
-}
-
-
-.sobre {
-    margin: 100px;
-    text-align: justify;
-    align-items: center;
-}
-
-
- .sobre #gabrielBackImg{
-    margin: 5px;
-    float: left;
-    width: 400px;
-    border-radius: 10px;
-    transition: 500ms;
-}
-
-.sobreProgramacao img{
-    border-radius: 20px;
-    width: 100%;
-    bottom: 0px;
-    margin: 20px;
-}
-
-.impressao3d img {
-    border-radius: 20px;
-    width: 100%;
-    bottom: 0px;
-    
-}
-article>.sobre>div {
-    margin: solid 2px #fff;
-}
 
 .container {
     display: flex;
@@ -194,13 +141,22 @@ article>.sobre>div {
     width: 400px;
 }
 
-@media (max-width: 691px){
+@media (max-width: 750px){
     #gabrielBackImg{
-        width: 250px !important;
+        width: 220px !important;
+        transition: 500ms;
+    }
+    footer {
+        font-size: .5em;
         transition: 500ms;
     }
 }
-
+@media (max-width: 550px){
+    #gabrielBackImg{
+        width: 120px !important;
+        transition: 500ms;
+    }
+}
 @media (max-width: 800px) {
     article>#gabrielBackImg{
         float: left !important;
@@ -216,18 +172,54 @@ article>.sobre>div {
     width: max-content;
     border-radius: 20px;
     padding: 5px;
-    /* color: */
     background-color: #333;
 
 }
 
-.titulo {
-    font-size: 8em;
-    transition: 1s;
+
+.grayDiv{
+    /* text-align: justify; */
+    color: #000;
+    background-image: linear-gradient(-45deg,#444, #fff);
+    border-radius: 30px;
+    margin: 0px 5%;
+    padding: 20px;
+    height: max-content;
+    box-shadow: #222 8px 8px;
+}
+.grayDiv div {
+    padding: 20px;
+    margin: 20px;
+    /* text-align: center; */
 }
 
-.titulo:hover {
-    font-size: 9em;
-    margin-bottom: -11px;
-    text-shadow: 4px 4px #444;
+.sobre #gabrielBackImg{
+    margin: 5px;
+    float: left;
+    width: 300px;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+.footerImages{
+    width: 300px;
+    position: absolute;
+    right: 1px;
+    bottom: 0;
+}
+
+.footerImages img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    transition: 200ms;
+
+}
+
+.footerImages img:hover {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    transition: 200ms;
 }

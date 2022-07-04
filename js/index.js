@@ -7,11 +7,11 @@ headerList.forEach((navButton) => navButton.addEventListener("click", () => {
 }
 ))
 
-$('.formulario').hide(0).delay(15000).css("right","5px").slideDown(1000)
+// $('.formulario').hide(0).delay(15000).css("right","5px").slideDown(1000)
 
-$('.x').click(function(){
-    $('.formulario').slideUp(1000)
-})
+// $('.x').click(function(){
+//     $('.formulario').slideUp(1000)
+// })
 
 
 function openPage(tagName, pageHTML) {
